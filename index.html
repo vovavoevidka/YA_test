@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Test</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<style type="text/css">
+	div.main{
+		width: 50%;
+		position: absolute;
+		margin-left: 25%;
+	}
+	div.for_circle{
+		display:inline-block;
+		float:left;
+	}	
+	div.for_options{
+		float:left;
+	}
+	p.for_options{
+		margin:0;
+		margin-left:10px;
+	}
+	div.endl{
+		clear: both;
+		width: 100%;
+		height: 0px;
+	}
+	div.down{
+		width: 50%;
+		float: left; 
+		padding-top: 20px;
+			}
+	.hidden{
+		display: none;
+	}
+	</style>
+<body>
+<div id="q1" class="main">
+	<h1>Питання 1:&nbsp;&nbsp;&nbsp;&nbsp;(2+2)*2=?</h1>
+	<div class="for_circle">
+		<input type="radio" name="q_1" value="1" onclick="q1_1()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">8</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_1" value="2" onclick="q1_2()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">6</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_1" value="3" onclick="q1_3()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">4</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_1" value="4" onclick="q1_4()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">2</p>
+	</div>
+	<div class="endl"></div>
+	<div class="down"></div>
+	<div class="down"><button style="float:right;margin-right:20px;"  onclick="show2_f1()">Next</button></div>
+</div>
+<div id="q2" class="main hidden" style="opacity:0;">
+	<h1>Питання 2:&nbsp;&nbsp;&nbsp;&nbsp;(3+2)*5=?</h1>
+	<div class="for_circle">
+		<input type="radio" name="q_2" value="1" onclick="q2_1()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">17</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_2" value="2" onclick="q2_2()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">15</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_2" value="3" onclick="q2_3()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">25</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_2" value="4" onclick="q2_4()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">30</p>
+	</div>
+	<div class="endl"></div>
+	<div class="down"><button style="margin-left:20px;" onclick="show1_f2()">Previsious</button></div>
+	<div class="down"><button style="float:right;margin-right:20px;" onclick="show3_f2()">Next</button></div>
+</div>
+<div id="q3" class="main hidden" style="opacity:0;">
+	<h1>Питання 3:&nbsp;&nbsp;&nbsp;&nbsp;(5+2)*8=?</h1>
+	<div class="for_circle">
+		<input type="radio" name="q_3" value="1" onclick="q3_1()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">17</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_3" value="2" onclick="q3_2()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">89</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_3" value="3" onclick="q3_3()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">75</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_3" value="4" onclick="q3_4()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">56</p>
+	</div>
+	<div class="endl"></div>
+	<div class="down"><button style="margin-left:20px;" onclick="show2_f3()">Previsious</button></div>
+	<div class="down"><button style="float:right;margin-right:20px;" onclick="show4_f3()">Next</button></div>
+</div>
+<div id="q4" class="main hidden" style="opacity:0;">
+	<h1>Питання 4:&nbsp;&nbsp;&nbsp;&nbsp;(5+9)*2=?</h1>
+	<div class="for_circle">
+		<input type="radio" name="q_4" value="1" onclick="q4_1()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">17</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_4" value="2" onclick="q4_2()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">89</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_4" value="3" onclick="q4_3()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">14</p>
+	</div>
+	<div class="endl"></div>
+	<div class="for_circle">
+		<input type="radio" name="q_4" value="4" onclick="q4_4()">	
+	</div>
+	<div class="for_options">
+		<p class="for_options">56</p>
+	</div>
+	<div class="endl"></div>
+	<div class="down"><button style="margin-left:20px;" onclick="show3_f4()">Previsious</button></div>
+	<div class="down"><button style="float:right;margin-right:20px;" onclick="show_results()">Show results</button></div>
+</div>
+<div id="results" class="main hidden" style="opacity: 0">
+<h1>Вітаємо! Ви пройшли цей надважкий тест</h1>
+<h1 style="display:inline-block;">Ваш результат:&nbsp;&nbsp; <h1 style="display:inline-block;" id="num_of_correct_answers">2</h1><h1 style="display:inline-block;">&nbsp;&nbsp;з 4</h1></h1>
+<div class="endl"></div>
+<h1 id="mistakes"></h1>
+</div>
+<script src="a.js"></script>
+</body>
+</head>
+</html>
