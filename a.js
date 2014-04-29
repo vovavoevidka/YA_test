@@ -111,8 +111,8 @@ function show_results () {
 	$("#q3").addClass("hidden");
 	$("#q4").animate({opacity: 0},500);
 	setTimeout('$("#q4").addClass("hidden")',500);
-	$("#image_gg").removeClass("hidden");
-	setTimeout('$("#image_gg").animate({opacity: 1},500)',500);
+	$("#results").removeClass("hidden");
+	setTimeout('$("#results").animate({opacity: 1},500)',500);
 	for(var i=0;i<answers.length;i++){
 		if (answers[i]) {
 			suma+=1;
@@ -130,7 +130,7 @@ if (if_is_mistake) {
 		};
 	}
 	document.getElementById('mistakes').innerHTML=s;
-};
+}
 else{
 	document.getElementById('mistakes').innerHTML='Браво! Помилок нема';
 };
